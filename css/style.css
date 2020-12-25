@@ -1,0 +1,520 @@
+@charset "utf-8";
+
+/* リセットcss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* その他のスタイルは以下に記述していきます */
+.header {
+  height: 70％;
+  width: 100%;
+  background: #000;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+
+.header-nav ul{
+  display: flex;
+}
+
+.header-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.header-nav a {
+  color: #f2f2f2;
+}
+
+#eyecatch {
+  height: 600px;
+  width: 100%;
+  background: url(../img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+  .eyecatch＿＿title {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  color: #ccc;
+  line-height: 1;
+}
+
+.eyecatch__card {
+  display: flex;
+  position: absolute;
+  top: 89.5%;
+  right: 0%;
+}
+
+.eyecatch__card--card1 {
+  width: 700px;
+  height: 20%;
+  padding: 5px; 
+  color: #333;
+  border: 1px solid #e9eaea;
+  border-radius: 3px;
+  transition: 0.3s; 
+  background: rgb(248, 247, 246);
+}
+
+.eyecatch__card--card1text {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.eyecatch__card--card2 {
+  width: 20%;
+  height: 20%;
+  background: black;
+  padding: 30px;
+}
+
+.eyecatch__card--card2news {
+  padding-bottom: 5px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
+#mission {
+  width: 100%
+  height: 300px;
+}
+
+.mission.content{
+  background-color: black;
+  color: white;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.mission.content__right {
+  position: relative; z-index: 1;
+}
+
+.mission.content__right--img{
+  width: 60%;
+  height: 100%;
+  position: relative; top: 40px; left: 30%;  z-index: 2;
+}
+
+.mission.content__left {
+  position: relative; left:30%;
+}
+
+.mission.content__left--title {
+  font-size: 18px;
+  margin-top: 100px;
+  margin-left: 2px;
+  margin-bottom: 25px;
+}
+
+.mission.content__left--text {
+  font-size: 12px;
+  margin-left: 3px;
+  margin-bottom: 25px;
+  position: relative; left: 2px; z-index: 3;
+}
+
+.link {
+  height: 50%;
+  background: white;
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.link:hover {
+  background: f5f5f5;
+}
+
+
+#service {
+  background-color: rgb(248, 247, 246);
+  width: 100%;
+  height: 1300px;
+}
+
+.section__title {
+  text-align: center;
+  font-size: 24px;
+}
+
+.service__left--card {
+  width: 30%;
+  position: absolute; left: 300px; bottom: -850px;  z-index: 3;
+  padding: 60px;
+  background-color: white;
+  color: #333;
+  transition: 0.3s; 
+}
+
+.service__left--cardtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.service__left--cardtitle2 {
+  margin-bottom: 25px;
+}
+
+.service__left--cardtext {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.link {
+  padding: 5px 5px; /* 上下に5px、左右に20px */
+  background: white;
+  font-size: 14px;
+  color: black;
+  text-decoration: none; /* テキストのスタイルを消す */
+  cursor: pointer;
+  transition: 0.4s ease; /* スタイルが変化する時間 */
+  border: 1px black solid;
+  margin-left: 70%;
+}
+
+.link:hover {
+  background: f5f5f5;
+}
+
+.service__right {
+  position: relative; bottom: 150px; z-index: 1;
+}
+
+.service__right--img {
+  width: 50%;
+  height: 40%;
+  position: relative; top: 190px; right: -630px;  z-index: 2;
+}
+
+.service__left2 {
+  position: relative; right:400px; z-index: 1;
+}
+
+.service__left2--img {
+  width: 50%;
+  height: 60%;
+  position: relative; top: 200px; left: 400px; z-index: 2;
+  margin-top: 50px;
+  
+}
+
+.service__right2--card {
+  width: 30%;
+  position: absolute; top: 1825px; left: 40%; z-index: 3;
+  padding: 60px;
+  background-color: white;
+  color: #333;
+  transition: 0.3s; 
+}
+
+.service__right2--cardtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.service__right2--cardtitle2 {
+  margin-bottom: 25px;
+}
+
+.service__right2--cardtext {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.link2 {
+  padding: 5px 5px; /* 上下に5px、左右に20px */
+  background: white;
+  font-size: 14px;
+  color: black;
+  text-decoration: none; /* テキストのスタイルを消す */
+  cursor: pointer;
+  transition: 0.4s ease; /* スタイルが変化する時間 */
+  border: 1px black solid;
+  margin-left: 70%;
+}
+
+.link2:hover {
+  background: f5f5f5;
+}
+
+#various {
+  height: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.various__company {
+  background: url(../img/company.jpeg) no-repeat;
+  height: 30%;
+  width: 4000%;
+  margin-top: 130px;
+  position: relative;
+  display: block;
+}
+
+.various__company--tlite {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 40%;
+  right: 40%;
+}
+
+.various__company--tlite2 {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 55%;
+  right: 48%;
+}
+
+.various__recruit {
+  background: url(../img/recruit.jpg) no-repeat;
+  background-position: right: 20px;
+  height: 30%;
+  width: 4000%;
+  margin-top: 130px;
+  position: relative; left: 486px;
+  display: block;
+}
+
+.various__recruit--tlite {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 40%;
+  right: 45%;
+}
+
+.various__recruit--tlite2 {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 55%;
+  right: 49%;
+}
+
+.various__FAQ--card {
+  width: 200%;
+  height: 1px;
+  position: relative; top: 550px; right: 750px;
+  padding: 60px;
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+.various__FAQ--cardtlite {
+  font-size: 25px;
+}
+
+.various__FAQ--cardtlite2 {
+  font-size: 12px;
+  margin-left: 300px;
+  text-align: center;
+}
+
+#contact {
+  height: 450px;
+  background: url(../img/contact-bg.jpg) no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.contact＿＿title {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.contact＿＿title2 {
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.contact__text1 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact__text2 {
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.link3 {
+  padding: 5px 5px; /* 上下に5px、左右に20px */
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  text-decoration: none; /* テキストのスタイルを消す */
+  cursor: pointer;
+  transition: 0.4s ease; /* スタイルが変化する時間 */
+  border: 1px white solid;
+}
+
+.footer {
+  height: 70％;
+  width: 100%;
+  background-color: black;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+
+.footer-nav ul{
+  display: flex;
+}
+
+.footer-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.footer-nav a {
+  color: #f2f2f2;
+}
+
+.footer-text {
+  color: #f2f2f2;
+  font-size: 16px;
+  text-align: center;
+  background-color: black;
+}
