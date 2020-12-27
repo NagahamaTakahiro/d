@@ -99,7 +99,6 @@ input, select {
 /* その他のスタイルは以下に記述していきます */
 .header {
   height: 70％;
-  width: 100%;
   background: #000;
 }
 
@@ -132,7 +131,6 @@ input, select {
 
 #eyecatch {
   height: 600px;
-  width: 100%;
   background: url(../img/eyecatch.jpg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -299,7 +297,7 @@ input, select {
 .service__right--img {
   width: 50%;
   height: 40%;
-  position: relative; top: 190px; right: -630px;  z-index: 2;
+  position: relative; top: 190px; right: -675px;  z-index: 2;
 }
 
 .service__left2 {
@@ -518,3 +516,42 @@ input, select {
   text-align: center;
   background-color: black;
 }
+
+@media screen and (max-width: 768px){
+  #hamburger {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    top: 15px;
+    right: 20px;
+    transition: 0.4s;
+    width: 40px;
+  }
+
+  #hamburger span {
+    position: absolute;
+    left: 2px;
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.8s;
+  }
+
+  #hamburger span:nth-of-type(1) {
+    top: 10px; 
+  }
+
+  #hamburger span:nth-of-type(2) {
+    top: 20px;
+  }
+
+  #hamburger span:nth-of-type(3) {
+    top: 30px;
+  }
+
+  .header-nav {
+    display: none;
+  }
