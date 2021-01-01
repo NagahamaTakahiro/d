@@ -174,9 +174,6 @@ select {
   vertical-align: middle;
 }
 
-/*------------------------*/
-/*   　　共通のスタイル      */
-/*------------------------*/
 html {
   height: 100%;
 }
@@ -228,9 +225,6 @@ body {
   font-size: 20px;
 }
 
-/*------------------------*/
-/*         header         */
-/*------------------------*/
 #top-header {
   height: 70px;
   line-height: 70px;
@@ -274,9 +268,6 @@ body {
   line-height: 1;
 }
 
-/*------------------------*/
-/*         news           */
-/*------------------------*/
 .news {
   position: absolute;
   bottom: 0;
@@ -305,9 +296,6 @@ body {
   color: #fff;
 }
 
-/*------------------------*/
-/*         mission        */
-/*------------------------*/
 .mission {
   position: relative;
   background: #000;
@@ -339,9 +327,6 @@ body {
   z-index: -999;
 }
 
-/*------------------------*/
-/*         service        */
-/*------------------------*/
 .service {
   background: #e5e5e5;
   margin-bottom: 10%;
@@ -385,9 +370,6 @@ body {
   margin: 0 0 0 auto;
 }
 
-/*------------------------*/
-/*        recruit         */
-/*------------------------*/
 .company {
   margin-bottom: 10%;
 }
@@ -419,9 +401,6 @@ body {
   color: #fff;
 }
 
-/*------------------------*/
-/*        faq             */
-/*------------------------*/
 .faq {
   width: 70%;
   background: #000;
@@ -446,9 +425,6 @@ body {
   text-align: center;
 }
 
-/*------------------------*/
-/*        contact         */
-/*------------------------*/
 .contact {
   background: url(../img/contact-bg.jpg) center/cover no-repeat;
   padding: 10%;
@@ -514,19 +490,19 @@ body {
   }
 
   #hamburger span:nth-of-type(1) {
-    top: 10px; /* ハンバーガーメニューの1本目の棒 */
+    top: 10px; 
   }
 
   #hamburger span:nth-of-type(2) {
-    top: 20px; /* ハンバーガーメニューの2本目の棒 */
+    top: 20px; 
   }
 
   #hamburger span:nth-of-type(3) {
-    top: 30px; /* ハンバーガーメニューの3本目の棒 */
+    top: 30px; 
   }
 
   .header-nav {
-    display: none; /* デスクトップのナビを消す */
+    display: none; 
   }
 
   .catchcopy {
